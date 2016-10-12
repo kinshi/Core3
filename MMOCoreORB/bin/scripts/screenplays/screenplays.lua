@@ -519,3 +519,7 @@ includeFile("record_keepers/record_keepers.lua")
 
 --Tests
 includeFile("tests/tests.lua")
+
+-- Housing System
+includeFile("housing_system/housing_system.lua")
+includeFile("housing_system/custom_mos_entha.lua")
