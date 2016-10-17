@@ -1615,4 +1615,9 @@ void CommandConfigManager::registerCommands() {
 	commandFactory.registerCommand<PetPatrolCommand>(String("petPatrol").toLowerCase());
 	commandFactory.registerCommand<PetClearPatrolPointsCommand>(String("petClearPatrolPoints").toLowerCase());
 	commandFactory.registerCommand<PetGetPatrolPointCommand>(String("petGetPatrolPoint").toLowerCase());
+	
+	// Tarkin Commands
+	commandFactory.registerCommand<HousingSystemCommand>(String("housingSystem").toLowerCase());
+	commandFactory.registerCommand<TarkinCommand>(String("tarkin").toLowerCase());
+
 }

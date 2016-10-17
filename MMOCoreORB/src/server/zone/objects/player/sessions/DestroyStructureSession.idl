@@ -35,7 +35,10 @@ class DestroyStructureSession extends Facade {
 	public native int initializeSession();
 	public native int sendDestroyCode();
 	public native int destroyStructure();
-	
+
+	@local
+	public native int hondoHousingUpdate(StructureObject structure);
+
 	public int cancelSession() {
 		creatureObject.dropActiveSession(SessionFacadeType.DESTROYSTRUCTURE);
 		

@@ -344,6 +344,10 @@ void DirectorManager::initializeLuaEngine(Lua* luaEngine) {
 	lua_register(luaEngine->getLuaState(), "getQuestVectorMap", getQuestVectorMap);
 	lua_register(luaEngine->getLuaState(), "createQuestVectorMap", createQuestVectorMap);
 	lua_register(luaEngine->getLuaState(), "removeQuestVectorMap", removeQuestVectorMap);
+	lua_register(luaEngine->getLuaState(), "objectPlaceStructure", objectPlaceStructure);
+	lua_register(luaEngine->getLuaState(), "getMaxStorage", getMaxStorage);
+	lua_register(luaEngine->getLuaState(), "getMaintenanceRate", getMaintenanceRate);
+	lua_register(luaEngine->getLuaState(), "getPowerRate", getPowerRate);
 
 	luaEngine->setGlobalInt("POSITIONCHANGED", ObserverEventType::POSITIONCHANGED);
 	luaEngine->setGlobalInt("CLOSECONTAINER", ObserverEventType::CLOSECONTAINER);
@@ -1974,7 +1978,7 @@ int DirectorManager::spawnBuilding(lua_State* L) {
 		instance()->error("Unable to find template for building " + script);
 		lua_pushnil(L);
 	} else {
-		StructureObject* structure = StructureManager::instance()->placeStructure(creature, script, x, y, 0, 0);
+		StructureObject* structure = StructureManager::instance()->placeStructure(creature, script, x, y, angle, 0);
 		if (structure == NULL) {
 			instance()->error("Unable to spawn building " + script);
 			lua_pushnil(L);
@@ -3177,4 +3181,92 @@ void DirectorManager::removeQuestVectorMap(const String& keyString) {
 
 	if (questMap != NULL)
 		ObjectManager::instance()->destroyObjectFromDatabase(questMap->_getObjectID());
+}
+
+/*
+* Legend of Hondo
+* Place a structure as a "player structure" using a screenplay scripted object, such as a terminal.
+* lua: objectPlaceStructure(pPlayer/pCreature, templateString, x, y, angle)
+* Note that the structure maintainance system will destroy any non player owned building, unless it belongs to "r3-0wn3r".
+*/
+int DirectorManager::objectPlaceStructure(lua_State* L) {
+	Reference<CreatureObject*> creature = (CreatureObject*)lua_touserdata(L, -5); // Using creature required for placeStructure()
+	String templateString = lua_tostring(L, -4);
+	float x = lua_tonumber(L, -3);
+	float y = lua_tonumber(L, -2);
+	int angle = lua_tonumber(L, -1);
+
+	ManagedReference<Zone*> zone = creature->getZone();
+
+	if (zone == NULL)
+		return 0;
+
+	int persistenceLevel = 1;
+
+	// Create Structure
+	StructureObject* structureObject = StructureManager::instance()->placeStructure(creature, templateString, x, y, angle, persistenceLevel);
+
+	if (structureObject == NULL) {
+		instance()->error("objectPlaceStructure was unable to spawn building.");
+		lua_pushnil(L);
+	} else {
+		structureObject->_setUpdated(true);
+		lua_pushlightuserdata(L, structureObject);
+	}
+
+	return 1;
+}
+
+/*
+* Legend of Hondo
+* Return the max number of items the specified template can store.
+*/
+int DirectorManager::getMaxStorage(lua_State* L) {
+	String script = lua_tostring(L, -1);
+
+	SharedStructureObjectTemplate* serverTemplate = dynamic_cast<SharedStructureObjectTemplate*>(TemplateManager::instance()->getTemplate(script.hashCode()));
+
+	int lots = serverTemplate->getLotSize();
+
+	if (lots == 0){
+		lots = 400;
+	} else {
+		lots = lots * 100;
+	}
+
+	lua_pushinteger(L, lots);
+
+	return 1;
+}
+
+/*
+* Legend of Hondo
+* Return the base maintainance rate of a the specified template.
+*/
+int DirectorManager::getMaintenanceRate(lua_State* L) {
+	String script = lua_tostring(L, -1);
+
+	SharedStructureObjectTemplate* serverTemplate = dynamic_cast<SharedStructureObjectTemplate*>(TemplateManager::instance()->getTemplate(script.hashCode()));
+
+	int rate = serverTemplate->getBaseMaintenanceRate();
+
+	lua_pushinteger(L, rate);
+
+	return 1;
+}
+
+/*
+* Legend of Hondo
+* Return the base power rate of a the specified template.
+*/
+int DirectorManager::getPowerRate(lua_State* L) {
+	String script = lua_tostring(L, -1);
+
+	SharedStructureObjectTemplate* serverTemplate = dynamic_cast<SharedStructureObjectTemplate*>(TemplateManager::instance()->getTemplate(script.hashCode()));
+
+	int rate = serverTemplate->getBasePowerRate();
+
+	lua_pushinteger(L, rate);
+
+	return 1;
 }
