@@ -64,8 +64,8 @@ object_building_player_player_house_tatooine_large_style_01 = object_building_pl
 		{templateFile = "object/tangible/sign/player/shop_sign_s04.iff", x = -11.64, z = 0.5, y = 18.75, ox = 0, oy = 0, oz = 0, ow =  1, cellid = -1, containmentType = -1, requiredSkill = "crafting_merchant_management_04", suiItem = "@player_structure:shop_sign4"},
 	},
 	constructionMarker = "object/building/player/construction/construction_player_house_tatooine_large_style_01.iff",
-	length = 5,
-	width = 7
+	length = 1,
+	width = 1
 }
 
 ObjectTemplates:addTemplate(object_building_player_player_house_tatooine_large_style_01, "object/building/player/player_house_tatooine_large_style_01.iff")

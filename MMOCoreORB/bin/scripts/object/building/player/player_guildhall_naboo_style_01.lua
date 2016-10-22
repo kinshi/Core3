@@ -47,8 +47,8 @@ object_building_player_player_guildhall_naboo_style_01 = object_building_player_
 	allowedZones = {"dantooine", "naboo", "rori"},
 	publicStructure = 0,
 	constructionMarker = "object/building/player/construction/construction_player_guildhall_naboo_style_01.iff",
-	length = 7,
-	width = 8,
+	length = 1,
+	width = 1,
 	skillMods = {
 		{"private_medical_rating", 100},
 		{"private_buff_mind", 100},

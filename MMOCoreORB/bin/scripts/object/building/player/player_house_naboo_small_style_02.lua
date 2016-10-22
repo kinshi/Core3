@@ -43,7 +43,7 @@
 
 object_building_player_player_house_naboo_small_style_02 = object_building_player_shared_player_house_naboo_small_style_02:new {
 	lotSize = 2,
-	baseMaintenanceRate = 16,
+	baseMaintenanceRate = 8,
 	allowedZones = {"dantooine", "naboo", "rori"},
 	publicStructure = 0,
 	skillMods = {
@@ -64,8 +64,8 @@ object_building_player_player_house_naboo_small_style_02 = object_building_playe
 		{templateFile = "object/tangible/sign/player/shop_sign_s04.iff", x = 11.64, z = 0.5, y = 7.68, ox = 0, oy = 0.707107, oz = 0, ow = -0.707107, cellid = -1, containmentType = -1, requiredSkill = "crafting_merchant_management_04", suiItem = "@player_structure:shop_sign4"},
 	},
 	constructionMarker = "object/building/player/construction/construction_player_house_naboo_small_style_02.iff",
-	length = 4,
-	width = 3
+	length = 1,
+	width = 1
 }
 
 ObjectTemplates:addTemplate(object_building_player_player_house_naboo_small_style_02, "object/building/player/player_house_naboo_small_style_02.iff")

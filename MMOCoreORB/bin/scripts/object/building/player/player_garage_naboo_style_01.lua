@@ -50,11 +50,11 @@ object_building_player_player_garage_naboo_style_01 = object_building_player_sha
 	cityRankRequired = 2,
 	abilityRequired = "place_garage",
 	uniqueStructure = true,
-	cityMaintenanceBase = 20000,
+	cityMaintenanceBase = 10000,
 	zoneComponent = "GarageZoneComponent",
 	dataObjectComponent = "GarageDataComponent",
-	length = 5,
-	width = 5,
+	length = 3,
+	width = 3,
 	childObjects = {
 		{templateFile = "object/tangible/terminal/terminal_player_structure_nosnap_mini.iff", x = 2.90, z = 1, y = 2, ox = 0, oy = 0, oz = 0, ow = 1, cellid = -1, containmentType = -1}
 	}
