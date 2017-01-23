@@ -100,7 +100,7 @@ ZonesEnabled = {
 	--"endor_asommers",
 	--"floratest",
 	--"godclient_test",
-	--"lok",
+	"lok",
 	--"naboo",
 	--"otoh_gunga",
 	--"rivertest",
@@ -135,12 +135,15 @@ ZonesEnabled = {
 
 
 -- directory of tres with live.cfg
-TrePath = "/home/swgemu/Desktop/SWGEmu"
+TrePath = "/home/tarkin/tre"
 
 TreFiles = {
 	"default_patch.tre",
+	"tarkin_custom_29APR14_00.tre","
+	"tarkin_post14.tre",
 	"patch_sku1_14_00.tre",
 	"patch_14_00.tre",
+	"tarkin_pre14.tre",
 	"patch_sku1_13_00.tre",
 	"patch_13_00.tre",
 	"patch_sku1_12_00.tre",
