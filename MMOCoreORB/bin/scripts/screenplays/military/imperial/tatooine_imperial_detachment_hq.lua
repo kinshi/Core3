@@ -22,20 +22,24 @@ function ImperialDetachmentHQScreenPlay:spawnSceneObjects()
 	col2creo:setOptionsBitmask(264)
 	collector:setCustomObjectName("\\#ee3377Travel to Imperial Oasis (Tatooine)")
 	createObserver(OBJECTRADIALUSED, "ImperialDetachmentHQScreenPlay", "teleportImpOasis", pCollector)
+
+--Travel to Corellia
 	
-	local pCollector2 = spawnSceneObject("tatooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", -2578, 5.2, 2065, 0, 1, 0, 0, 0)
-	local collector = LuaSceneObject(pCollector2)
-	local col2creo = LuaCreatureObject(pCollector2)
-	col2creo:setOptionsBitmask(264)
-	collector:setCustomObjectName("\\#ee3377Travel to Imperial Stronghold (Corellia)")
-	createObserver(OBJECTRADIALUSED, "ImperialDetachmentHQScreenPlay", "teleportStronghold", pCollector2)
+--	local pCollector2 = spawnSceneObject("tatooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", -2578, 5.2, 2065, 0, 1, 0, 0, 0)
+--	local collector = LuaSceneObject(pCollector2)
+--	local col2creo = LuaCreatureObject(pCollector2)
+--	col2creo:setOptionsBitmask(264)
+--	collector:setCustomObjectName("\\#ee3377Travel to Imperial Stronghold (Corellia)")
+--	createObserver(OBJECTRADIALUSED, "ImperialDetachmentHQScreenPlay", "teleportStronghold", pCollector2)
+
+--Travel to Naboo
 	
-	local pCollector3 = spawnSceneObject("tatooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", -2580, 5.2, 2065, 0, 1, 0, 0, 0)
-	local collector = LuaSceneObject(pCollector3)
-	local col2creo = LuaCreatureObject(pCollector3)
-	col2creo:setOptionsBitmask(264)
-	collector:setCustomObjectName("\\#ee3377Travel to Emporer's Retreat (Naboo)")
-	createObserver(OBJECTRADIALUSED, "ImperialDetachmentHQScreenPlay", "teleportImpRetreat", pCollector3)
+--	local pCollector3 = spawnSceneObject("tatooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", -2580, 5.2, 2065, 0, 1, 0, 0, 0)
+--	local collector = LuaSceneObject(pCollector3)
+--	local col2creo = LuaCreatureObject(pCollector3)
+--	col2creo:setOptionsBitmask(264)
+--	collector:setCustomObjectName("\\#ee3377Travel to Emporer's Retreat (Naboo)")
+--	createObserver(OBJECTRADIALUSED, "ImperialDetachmentHQScreenPlay", "teleportImpRetreat", pCollector3)
 			
 	-- Terminals
 
