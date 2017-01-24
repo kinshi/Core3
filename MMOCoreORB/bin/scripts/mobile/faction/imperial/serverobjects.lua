@@ -188,3 +188,32 @@ includeFile("faction/imperial/stormtrooper_rifleman.lua")
 includeFile("faction/imperial/stormtrooper_sniper.lua")
 includeFile("faction/imperial/stormtrooper_squad_leader.lua")
 includeFile("faction/imperial/veteran_compforce_trooper.lua")
+
+--Tarkin Custom
+
+includeFile("faction/tarkin_custom/imperial/sentry_imperial_major.lua")
+includeFile("faction/tarkin_custom/imperial/sentry_stormtrooper.lua")
+includeFile("faction/tarkin_custom/imperial/sentry_stormtrooper_bombardier.lua")
+--includeFile("faction/tarkin_custom/imperial/sentry_stormtrooper_captain.lua")
+includeFile("faction/tarkin_custom/imperial/sentry_stormtrooper_combat_medic.lua")
+includeFile("faction/tarkin_custom/imperial/sentry_stormtrooper_rifleman.lua")
+includeFile("faction/tarkin_custom/imperial/sentry_stormtrooper_sniper.lua")
+includeFile("faction/tarkin_custom/imperial/sentry_stormtrooper_squad_leader.lua")
+
+--Tarkin GCW Base NPCs
+
+includeFile("faction/tarkin_custom/imperial/gcw_dark_trooper.lua")
+includeFile("faction/tarkin_custom/imperial/gcw_imperial_captain.lua")
+includeFile("faction/tarkin_custom/imperial/gcw_imperial_commander.lua")
+includeFile("faction/tarkin_custom/imperial/gcw_imperial_first_lieutenant.lua")
+includeFile("faction/tarkin_custom/imperial/gcw_imperial_general.lua")
+includeFile("faction/tarkin_custom/imperial/gcw_imperial_medic.lua")
+includeFile("faction/tarkin_custom/imperial/gcw_imperial_trooper.lua")
+includeFile("faction/tarkin_custom/imperial/gcw_imperial_warrant_officer_i.lua")
+includeFile("faction/tarkin_custom/imperial/gcw_stormtrooper.lua")
+includeFile("faction/tarkin_custom/imperial/gcw_stormtrooper_bombardier.lua")
+includeFile("faction/tarkin_custom/imperial/gcw_stormtrooper_colonel.lua")
+includeFile("faction/tarkin_custom/imperial/gcw_stormtrooper_medic.lua")
+includeFile("faction/tarkin_custom/imperial/gcw_stormtrooper_squad_leader.lua")
+includeFile("faction/tarkin_custom/imperial/gcw_at_st.lua")
+
