@@ -54,8 +54,8 @@ ORBPort = 44419
 DBHost = "127.0.0.1"
 DBPort = 3306
 DBName = "swgemu"
-DBUser = "swgemu"
-DBPass = "123456"
+DBUser = "tarkin"
+DBPass = "password"
 DBSecret = "swgemus3cr37!" -- Change this! This value should be unique and of reasonable length.
 
 LoginPort = 44453
@@ -66,8 +66,8 @@ LoginRequiredVersion = "20050408-18:00"
 MantisHost = "127.0.0.1"
 MantisPort = 3306
 MantisName = "swgemu"
-MantisUser = "swgemu"
-MantisPass = "123456"
+MantisUser = "tarkin"
+MantisPass = "password"
 MantisPrfx = "mantis_" -- The prefix for your mantis tables.
 
 AutoReg = 1
@@ -139,7 +139,7 @@ TrePath = "/home/tarkin/tre"
 
 TreFiles = {
 	"default_patch.tre",
-	"tarkin_custom_29APR14_00.tre","
+	"tarkin_custom_29APR14_00.tre",
 	"tarkin_post14.tre",
 	"patch_sku1_14_00.tre",
 	"patch_14_00.tre",
@@ -206,3 +206,5 @@ WebErrorLog = "../log/weberror.log"
 WebSessionTimeout = 600 -- Length that inactive web sessions expire
 
 PurgeDeletedCharacters = 10 --How often in minutes to purge deleted characters
+MaxNavMeshJobs = 6
+DumpObjFiles = 1
