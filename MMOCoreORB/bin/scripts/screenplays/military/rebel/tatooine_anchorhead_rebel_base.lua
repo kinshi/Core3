@@ -15,7 +15,7 @@ end
 
 --spawn the travel terminals
 
-function AnchorheadRebelBaseScreenPlay:spawnSceneObjects()
+--function AnchorheadRebelBaseScreenPlay:spawnSceneObjects()
 
 	local pCollector = spawnSceneObject("tatooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", 51.8, 52.0, -5335.9, 0, 0, 0, 1, 0)
 	local collector = LuaSceneObject(pCollector)
@@ -50,7 +50,7 @@ function AnchorheadRebelBaseScreenPlay:spawnSceneObjects()
 	--TODO
 	-- AH still needs "sentry" class NPCs placed (replace the guards at the gates and the shuttle with Sentries
 	
-end
+--end
 
 --spawn the NPCs
 

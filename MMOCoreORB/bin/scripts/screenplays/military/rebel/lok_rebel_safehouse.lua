@@ -13,7 +13,7 @@ function LokRebelSafehouseScreenPlay:start()
 	end
 end
 
-function LokRebelSafehouseScreenPlay:spawnSceneObjects()
+--function LokRebelSafehouseScreenPlay:spawnSceneObjects()
 
 	local pCollector = spawnSceneObject("lok", "object/tangible/furniture/imperial/data_terminal_s1.iff", -4761, 4.0, 3516, 0, 0, 0, 1, 0)
 	local collector = LuaSceneObject(pCollector)
@@ -56,7 +56,7 @@ function LokRebelSafehouseScreenPlay:spawnSceneObjects()
 	spawnMobile("lok", "sentry_specforce", 300, -4711.8, 2.0, 3484.1, 137, 0)
 	spawnMobile("lok", "sentry_specforce", 300, -4715.1, 1.9, 3480.8, 137, 0)
 
-end
+--end
 
 function LokRebelSafehouseScreenPlay:spawnMobiles()
 	

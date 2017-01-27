@@ -13,7 +13,7 @@ function TatooineImperialOasisScreenPlay:start()
 	end
 end
 
-function TatooineImperialOasisScreenPlay:spawnSceneObjects()
+--function TatooineImperialOasisScreenPlay:spawnSceneObjects()
 
 	local pCollector = spawnSceneObject("tatooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", -5359.0, 8.0, 2753.0, 0, 0, 0, 1, 0)
 	local collector = LuaSceneObject(pCollector)
@@ -36,7 +36,7 @@ function TatooineImperialOasisScreenPlay:spawnSceneObjects()
 	--No need for a shuttle, the existing NPC starport serves as an adequate prop 
 	--Players get here via F.A.R.T travel terminal at Moenia starport (Moenia is a Rebel stronghold)
 	
-end
+--end
 
 function TatooineImperialOasisScreenPlay:spawnMobiles()
 	
