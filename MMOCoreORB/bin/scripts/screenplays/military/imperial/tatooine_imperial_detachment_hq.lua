@@ -46,7 +46,7 @@ end
 	spawnSceneObject("tatooine", "object/tangible/terminal/terminal_character_builder.iff", -2568, 5.5, 2090, 0, 0, 0, 1, 0)
 	spawnSceneObject("tatooine", "object/tangible/terminal/terminal_mission_imperial.iff", -2574, 5.5, 2092, 0, 0, 0, 1, 0)
 
-end
+--end
 
 function ImperialDetachmentHQScreenPlay:spawnMobiles()
 

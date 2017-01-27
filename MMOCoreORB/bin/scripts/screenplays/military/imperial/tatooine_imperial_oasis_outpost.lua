@@ -36,7 +36,7 @@ end
 	--No need for a shuttle, the existing NPC starport serves as an adequate prop 
 	--Players get here via F.A.R.T travel terminal at Moenia starport (Moenia is a Rebel stronghold)
 	
-end
+--end
 
 function TatooineImperialOasisScreenPlay:spawnMobiles()
 	

@@ -50,7 +50,7 @@ end
 	--TODO
 	-- AH still needs "sentry" class NPCs placed (replace the guards at the gates and the shuttle with Sentries
 	
-end
+--end
 
 --spawn the NPCs
 

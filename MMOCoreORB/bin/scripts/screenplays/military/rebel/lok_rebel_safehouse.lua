@@ -56,7 +56,7 @@ end
 	spawnMobile("lok", "sentry_specforce", 300, -4711.8, 2.0, 3484.1, 137, 0)
 	spawnMobile("lok", "sentry_specforce", 300, -4715.1, 1.9, 3480.8, 137, 0)
 
-end
+--end
 
 function LokRebelSafehouseScreenPlay:spawnMobiles()
 	
