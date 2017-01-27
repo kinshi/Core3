@@ -12,7 +12,7 @@ function ImperialDetachmentHQScreenPlay:start()
 	end
 end
 
-function ImperialDetachmentHQScreenPlay:spawnSceneObjects()
+--function ImperialDetachmentHQScreenPlay:spawnSceneObjects()
 
 	-- Travel terminal
 

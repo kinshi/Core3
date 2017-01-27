@@ -15,7 +15,7 @@ end
 
 --spawn the travel terminals
 
-function AnchorheadRebelBaseScreenPlay:spawnSceneObjects()
+--function AnchorheadRebelBaseScreenPlay:spawnSceneObjects()
 
 	local pCollector = spawnSceneObject("tatooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", 51.8, 52.0, -5335.9, 0, 0, 0, 1, 0)
 	local collector = LuaSceneObject(pCollector)
