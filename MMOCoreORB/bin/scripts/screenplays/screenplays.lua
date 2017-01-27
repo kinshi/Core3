@@ -1,8 +1,8 @@
 package.path = package.path .. ";scripts/screenplays/themepark/?.lua;scripts/screenplays/?.lua;scripts/screenplays/dungeon/corellian_corvette/?.lua"
 require("screenplay")
 require("themeParkLogic")
-require("corvetteTicketGiverLogic")
-require("corvetteTicketTakerLogic")
+--require("corvetteTicketGiverLogic")
+--require("corvetteTicketTakerLogic")
 
 -- SUI
 --require("sui.custom.SuiSample")
@@ -391,7 +391,7 @@ includeFile("caves/tatooine_squill_cave.lua")
 includeFile("caves/tatooine_tusken_bunker.lua")
 
 -- Cities
---includeFile("cities/city.lua")
+includeFile("cities/city.lua")
 --includeFile("cities/corellia_bela_vistal.lua")
 --includeFile("cities/corellia_coronet.lua")
 --includeFile("cities/corellia_doaba_guerfel.lua")
