@@ -49,7 +49,7 @@ FullAutoSingle2Command = {
 	healthCostMultiplier = 2.0,
 	actionCostMultiplier = 2.5,
 	mindCostMultiplier = 0.5,
-	accuracyBonus = 25,
+	accuracyBonus = 50,
 
 	animation = "fire_7_single", 
 	animType = GENERATE_RANGED,
@@ -63,7 +63,7 @@ FullAutoSingle2Command = {
 		{ "dizzy_defense", "resistance_states" }, 
 		{ "jedi_state_defense" }, 
 		30, 
-		0, 
+		100, 
 		30 
 	  ),
 	  StateEffect( 
@@ -72,7 +72,7 @@ FullAutoSingle2Command = {
 		{ "blind_defense", "resistance_states" }, 
 		{ "jedi_state_defense" }, 
 		30, 
-		0, 
+		100, 
 		40 
 	  ),
 	  StateEffect( 
@@ -81,7 +81,7 @@ FullAutoSingle2Command = {
 		{ "stun_defense", "resistance_states" }, 
 		{ "jedi_state_defense" }, 
 		30, 
-		0, 
+		100, 
 		30 
 	  )
 	},
