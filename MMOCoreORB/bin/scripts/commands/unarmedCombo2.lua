@@ -51,7 +51,7 @@ UnarmedCombo2Command = {
 	mindCostMultiplier = 2.0,
         accuracyBonus = 15,
 
-	poolsToDamage = HEALTH_ATTRIBUTE + ACTION_ATTRIBUTE + MIND_ATTRIBUTE,
+	poolsToDamage = HEALTH_ATTRIBUTE + ACTION_ATTRIBUTE,
 
 	animation = "combo_4a", 
 	animType = GENERATE_INTENSITY,
