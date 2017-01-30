@@ -51,7 +51,7 @@ HeadShot2Command = {
 	mindCostMultiplier = 1.5,
 	accuracyBonus = 5,
 
-	poolsToDamage = MIND_ATTRIBUTE,
+	poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animation = "fire_1_special_single", 
 	animType = GENERATE_RANGED,
