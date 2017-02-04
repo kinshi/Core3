@@ -84,12 +84,6 @@ object_building_poi_scout_camp_s5 = object_building_poi_shared_scout_camp_s5:new
 			cellid = -1,
 			containmentType = -1},
 
-		{templateFile = "object/tangible/terminal/terminal_character_builder.iff", 
-			x = 4.5, z = 0, y = 13.5, 
-			ox = 0, oy = .72, oz = 0, ow = -.75, 
-			cellid = -1, 
-			containmentType = -1},
-
 		{templateFile = "object/tangible/crafting/station/public_weapon_station.iff",
 			x = 4.5, z = 0, y = 13.5,
 			ox = 0, oy = .72, oz = 0, ow = -.75,

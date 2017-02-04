@@ -53,7 +53,7 @@ object_building_player_city_hospital_corellia = object_building_player_city_shar
 	length = 5,
 	width = 5,
 	cityRankRequired = 3,
-	--abilityRequired = "place_hospital",
+	abilityRequired = "place_hospital",
 	zoneComponent = "StructureZoneComponent",
 	childObjects = {
 		{templateFile = "object/tangible/sign/municipal/municipal_sign_hanging_hospital.iff", x = 8, z = 2, y = 11, ox = 0, oy = 1, oz = 0, ow = 0, cellid = -1, containmentType = -1},
