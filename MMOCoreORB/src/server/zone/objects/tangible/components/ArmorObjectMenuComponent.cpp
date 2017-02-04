@@ -42,15 +42,16 @@ void ArmorObjectMenuComponent::fillObjectMenuResponse(SceneObject* sceneObject, 
 			return;
 	}
 
-	String text = "Color Change";
+	String text = "Change Color";
 	menuResponse->addRadialMenuItem(81, 3, text);
+	menuResponse->addRadialMenuItem(82, 3, "@sui:color_frame");
 	
     WearableObjectMenuComponent::fillObjectMenuResponse(sceneObject, menuResponse, player); 	
 }
 
 int ArmorObjectMenuComponent::handleObjectMenuSelect(SceneObject* sceneObject, CreatureObject* player, byte selectedID) const {
 
-	if (selectedID == 81) {
+	if (selectedID == 81 || selectedID == 82) {
 		
 		ManagedReference<SceneObject*> parent = sceneObject->getParent().get();
 	
