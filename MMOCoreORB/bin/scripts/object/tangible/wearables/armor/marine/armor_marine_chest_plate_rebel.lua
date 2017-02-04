@@ -90,26 +90,26 @@ object_tangible_wearables_armor_marine_armor_marine_chest_plate_rebel = object_t
 				"object/mobile/vendor/zabrak_male.iff" },
 	
 	-- Damage types in WeaponObject
-	vulnerability = LIGHTSABER,
+	vulnerability = ACID + STUN + LIGHTSABER,
 	
 	maxCondition = 45000,
 	
 	-- These are default Blue Frog stats
-	healthEncumbrance = 1,
-	actionEncumbrance = 1,
-	mindEncumbrance = 1,
+	healthEncumbrance = 150,
+	actionEncumbrance = 49,
+	mindEncumbrance = 19,
 
 	-- LIGHT, MEDIUM, HEAVY
 	rating = LIGHT,
 
-	kinetic = 55,
-	energy = 55,
-	electricity = 55,
-	stun = 55,
-	blast = 55,
-	heat = 55,
-	cold = 55,
-	acid = 55,
+	kinetic = 30,
+	energy = 30,
+	electricity = 30,
+	stun = 0,
+	blast = 30,
+	heat = 30,
+	cold = 30,
+	acid = 0,
 	lightSaber = 0
 }
 
