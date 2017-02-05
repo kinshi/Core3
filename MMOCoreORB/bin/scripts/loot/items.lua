@@ -1203,17 +1203,17 @@ includeFile("items/wearables/wookiee/wke_skirt_s04.lua")
 --includeFile("items/tarkin_custom/nge_housing/nge_sith_house_scheme.lua")
 
 --mandalorian_armor
---includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_belt_scheme.lua")
---includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_bicep_l_scheme.lua")
---includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_bicep_r_scheme.lua")
---includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_boots_scheme.lua")
---includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_bracer_l_scheme.lua")
---includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_bracer_r_scheme.lua")
---includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_chest_scheme.lua")
---includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_gloves_scheme.lua")
---includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_helmet_scheme.lua")
---includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_jetpack_scheme.lua")
---includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_leggings_scheme.lua")
+includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_belt_scheme.lua")
+includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_bicep_l_scheme.lua")
+includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_bicep_r_scheme.lua")
+includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_boots_scheme.lua")
+includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_bracer_l_scheme.lua")
+includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_bracer_r_scheme.lua")
+includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_chest_scheme.lua")
+includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_gloves_scheme.lua")
+includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_helmet_scheme.lua")
+includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_jetpack_scheme.lua")
+includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_leggings_scheme.lua")
 
 --BH armor
 
