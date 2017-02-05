@@ -1218,15 +1218,15 @@ includeFile("items/wearables/wookiee/wke_skirt_s04.lua")
 --BH armor
 
 includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_belt_scheme.lua")
---includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_bicep_l_scheme.lua")
---includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_bicep_r_scheme.lua")
---includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_boots_scheme.lua")
---includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_bracer_l_scheme.lua")
---includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_bracer_r_scheme.lua")
---includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_chest_scheme.lua")
---includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_gloves_scheme.lua")
---includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_helmet_scheme.lua")
---includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_leggings_scheme.lua")
+includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_bicep_l_scheme.lua")
+includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_bicep_r_scheme.lua")
+includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_boots_scheme.lua")
+includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_bracer_l_scheme.lua")
+includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_bracer_r_scheme.lua")
+includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_chest_scheme.lua")
+includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_gloves_scheme.lua")
+includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_helmet_scheme.lua")
+includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_leggings_scheme.lua")
 
 --Factional Houses
 
