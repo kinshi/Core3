@@ -94,37 +94,6 @@ object_tangible_wearables_armor_bounty_hunter_armor_bounty_hunter_belt = object_
 				"object/mobile/vendor/wookiee_male.iff",
 				"object/mobile/vendor/zabrak_female.iff",
 				"object/mobile/vendor/zabrak_male.iff" },
-
-	-- Damage types in WeaponObject
-	--vulnerability = LIGHTSABER,
-
-	-- These are default Blue Frog stats
-	healthEncumbrance = 1,
-	actionEncumbrance = 1,
-	mindEncumbrance = 1,
-
-	-- LIGHT, MEDIUM, HEAVY
-	rating = LIGHT,
-
-	kinetic = 60,
-	energy = 60,
-	electricity = 60,
-	stun = 60,
-	blast = 60,
-	heat = 60,
-	cold = 60,
-	acid = 60,
-	lightSaber = 0,
-
-	numberExperimentalProperties = {1, 1, 1, 1},
-	experimentalProperties = {"XX", "XX", "XX", "XX"},
-	experimentalWeights = {1, 1, 1, 1},
-	experimentalGroupTitles = {"null", "null", "null", "exp_durability"},
-	experimentalSubGroupTitles = {"null", "null", "sockets", "hitpoints"},
-	experimentalMin = {0, 0, 0, 1000},
-	experimentalMax = {0, 0, 0, 1000},
-	experimentalPrecision = {0, 0, 0, 0},
-	experimentalCombineType = {0, 0, 4, 1},
 }
 
 ObjectTemplates:addTemplate(object_tangible_wearables_armor_bounty_hunter_armor_bounty_hunter_belt, "object/tangible/wearables/armor/bounty_hunter/armor_bounty_hunter_belt.iff")
