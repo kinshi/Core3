@@ -87,7 +87,10 @@ public:
 		//Player is in the tutorial zone and is allowed to migrate stats.
 		Zone* zone = creature->getZone();
 
-		if (zone != NULL && zone->getZoneName() == "tutorial")
+		
+		//Tarkin mod to allow statmigration in any loaded zone, rather than limit to just the tutorial zone. All we do now is simply do the NULL check and proceed to stat migration.
+		
+		if (zone != NULL ) // && zone->getZoneName() == "tutorial")
 			session->migrateStats();
 
 
