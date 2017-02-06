@@ -32,13 +32,12 @@ fbase_imperial_master_sergeant_hard = Creature:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 100000},
-				{group = "junk", chance = 6000000},
+				{group = "junk", chance = 5000000},
 				{group = "weapons_all", chance = 1100000},
 				{group = "armor_all", chance = 1100000},
-				{group = "clothing_attachments", chance = 150000},
-				{group = "armor_attachments", chance = 150000},
-				{group = "imperial_officer_common", chance = 400000},
-				{group = "wearables_all", chance = 1000000}
+				{group = "clothing_attachments", chance = 1150000},
+				{group = "armor_attachments", chance = 1150000},
+				{group = "imperial_officer_common", chance = 400000}
 			}
 		}
 	},
