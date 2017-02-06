@@ -33,14 +33,13 @@ fbase_dark_trooper_hard = Creature:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 300000},
-				{group = "junk", chance = 6000000},
+				{group = "junk", chance = 5000000},
 				{group = "holocron_dark", chance = 150000},
 				{group = "holocron_light", chance = 150000},
 				{group = "weapons_all", chance = 1050000},
 				{group = "armor_all", chance = 1050000},
-				{group = "clothing_attachments", chance = 150000},
-				{group = "armor_attachments", chance = 150000},
-				{group = "wearables_all", chance = 1000000}
+				{group = "clothing_attachments", chance = 1150000},
+				{group = "armor_attachments", chance = 1150000}
 			}
 		}
 	},

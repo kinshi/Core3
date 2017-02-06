@@ -65,7 +65,7 @@ object_draft_schematic_food_drink_corellian_ale = object_draft_schematic_food_sh
    ingredientTemplateNames = {"craft_food_ingredients_n", "craft_food_ingredients_n", "craft_food_ingredients_n", "craft_food_ingredients_n"},
    ingredientTitleNames = {"double_aged_wheat", "alcohol", "glass", "additive"},
    ingredientSlotType = {0, 1, 2, 3},
-   resourceTypes = {"wheat_domesticated_corellia", "object/tangible/food/crafted/shared_drink_alcohol.iff", "object/tangible/component/food/base/shared_drink_container_base.iff", "object/tangible/food/crafted/additive/shared_additive_light.iff"},
+   resourceTypes = {"wheat_domesticated", "object/tangible/food/crafted/shared_drink_alcohol.iff", "object/tangible/component/food/base/shared_drink_container_base.iff", "object/tangible/food/crafted/additive/shared_additive_light.iff"},
    resourceQuantities = {15, 1, 1, 1},
    contribution = {100, 100, 100, 100},
 

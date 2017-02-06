@@ -65,7 +65,7 @@ object_draft_schematic_chemistry_component_biologic_effect_controller_advanced =
    ingredientTemplateNames = {"craft_chemical_ingredients_n", "craft_chemical_ingredients_n"},
    ingredientTitleNames = {"organic_element", "inorganic_element"},
    ingredientSlotType = {0, 0},
-   resourceTypes = {"wheat_wild_lok", "fiberplast_tatooine"},
+   resourceTypes = {"wheat_wild", "fiberplast"},
    resourceQuantities = {18, 18},
    contribution = {100, 100},
 

@@ -55,7 +55,7 @@ ChargeShot2Command = {
 
 	combatSpam = "chargeblast",
 
-	coneAngle = 30,
+	coneAngle = 60, --JTL PrimaGuide doesn't specify, but all AOE's for carbine are (64x15)
 	coneAction = true,
 
 	stateEffects = {
@@ -64,8 +64,8 @@ ChargeShot2Command = {
 		{ "knockdownRecovery", "lastKnockdown" }, 
 		{ "knockdown_defense" }, 
 		{}, 
+		40, 
 		100, 
-		0, 
 		0 
 	  )
 	},

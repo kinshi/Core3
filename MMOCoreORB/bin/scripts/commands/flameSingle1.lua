@@ -45,7 +45,7 @@ FlameSingle1Command = {
         name = "flamesingle1",
 
 	damageMultiplier = 5,
-	speedMultiplier = 4,
+	speedMultiplier = 3,
 	healthCostMultiplier = 1.5,
 	actionCostMultiplier = 0.5,
 	mindCostMultiplier = 0.5,
@@ -62,7 +62,7 @@ FlameSingle1Command = {
 		{"resistance_fire", "fire_resist"},
 		HEALTH,
 		true,
-		0,
+		100,
 		100,
 		100, 
 		60,

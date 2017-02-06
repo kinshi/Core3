@@ -32,12 +32,11 @@ command_security_guard = Creature:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 200000},
-				{group = "junk", chance = 6900000},
+				{group = "junk", chance = 5900000},
 				{group = "rifles", chance = 800000},
 				{group = "pistols", chance = 800000},
-				{group = "clothing_attachments", chance = 150000},
-				{group = "armor_attachments", chance = 150000},
-				{group = "wearables_common", chance = 1000000}
+				{group = "clothing_attachments", chance = 1150000},
+				{group = "armor_attachments", chance = 1150000}
 			},
 			lootChance = 2300000
 		}
