@@ -520,6 +520,10 @@ includeFile("record_keepers/record_keepers.lua")
 --Tests
 includeFile("tests/tests.lua")
 
+-- Tarkin Admin Tools
+includeFile("tools/house_plop.lua")
+
+=======
 --Tarkin Custom Military POIs
 
 --Imperial
