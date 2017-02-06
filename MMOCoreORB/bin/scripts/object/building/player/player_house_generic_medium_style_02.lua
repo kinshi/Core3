@@ -42,8 +42,8 @@
 
 
 object_building_player_player_house_generic_medium_style_02 = object_building_player_shared_player_house_generic_medium_style_02:new {
-	lotSize = 2,
-	baseMaintenanceRate = 34,
+	lotSize = 3,
+	baseMaintenanceRate = 17,
 	allowedZones = {"corellia", "dantooine", "lok", "naboo", "rori", "talus", "tatooine"},
 	publicStructure = 0,
 	skillMods = {
@@ -64,8 +64,8 @@ object_building_player_player_house_generic_medium_style_02 = object_building_pl
 		{templateFile = "object/tangible/sign/player/shop_sign_s04.iff", x = 11.79, z = 0.5, y = 11.64, ox = 0, oy = 0, oz = 0, ow =  1, cellid = -1, containmentType = -1, requiredSkill = "crafting_merchant_management_04", suiItem = "@player_structure:shop_sign4"},
 	},
 	constructionMarker = "object/building/player/construction/construction_player_house_corellia_medium_style_02.iff",
-	length = 3,
-	width = 4
+	length = 1,
+	width = 1
 }
 
 ObjectTemplates:addTemplate(object_building_player_player_house_generic_medium_style_02, "object/building/player/player_house_generic_medium_style_02.iff")

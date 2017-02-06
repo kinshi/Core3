@@ -44,10 +44,10 @@
 object_building_player_player_merchant_tent_style_03 = object_building_player_shared_player_merchant_tent_style_03:new {
 	lotSize = 1,
 	publicStructure = 1,
-	baseMaintenanceRate = 10,
+	baseMaintenanceRate = 5,
 	allowedZones = {"corellia", "dantooine", "lok", "naboo", "rori", "talus", "tatooine"},
-	length = 3,
-	width = 3,
+	length = 1,
+	width = 1,
 	alwaysPublic = 1,
 	abilityRequired = "place_merchant_tent",
 	skillMods = {

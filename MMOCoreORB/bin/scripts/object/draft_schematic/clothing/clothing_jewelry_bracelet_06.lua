@@ -73,7 +73,12 @@ object_draft_schematic_clothing_clothing_jewelry_bracelet_06 = object_draft_sche
    targetTemplate = "object/tangible/wearables/bracelet/bracelet_s06_l.iff",
 
    additionalTemplates = {
-             }
+             },
 
+	skillMods = {
+		{"private_medical_rating", 100},
+		{"private_med_wound_health", 100},
+		{"private_med_wound_action", 100}
+	}
 }
 ObjectTemplates:addTemplate(object_draft_schematic_clothing_clothing_jewelry_bracelet_06, "object/draft_schematic/clothing/clothing_jewelry_bracelet_06.iff")

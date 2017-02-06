@@ -65,7 +65,7 @@ object_draft_schematic_chemistry_component_liquid_delivery_suspension_advanced =
    ingredientTemplateNames = {"craft_chemical_ingredients_n", "craft_chemical_ingredients_n"},
    ingredientTitleNames = {"purified_organic_suspension", "suspension_base"},
    ingredientSlotType = {0, 0},
-   resourceTypes = {"fruit_berries_dantooine", "water_vapor_talus"},
+   resourceTypes = {"fruit_berries", "water_vapor"},
    resourceQuantities = {6, 6},
    contribution = {100, 100},
 

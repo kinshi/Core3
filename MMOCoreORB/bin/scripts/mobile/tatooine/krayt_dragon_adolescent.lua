@@ -3,14 +3,14 @@ krayt_dragon_adolescent = Creature:new {
 	socialGroup = "krayt",
 	faction = "",
 	level = 336,
-	chanceHit = 30,
-	damageMin = 2270,
-	damageMax = 4250,
-	baseXp = 28549,
-	baseHAM = 410000,
-	baseHAMmax = 501000,
-	armor = 3,
-	resists = {195,195,195,195,165,195,195,195,-1},
+	chanceHit = 12.0,
+	damageMin = 931,
+	damageMax = 1500,
+	baseXp = 26356,
+	baseHAM = 150000,
+	baseHAMmax = 201000,
+	armor = 2,
+	resists = {170,170,30,30,120,30,30,30,-1},
 	meatType = "meat_carnivore",
 	meatAmount = 1000,
 	hideType = "hide_bristley",
@@ -30,13 +30,21 @@ krayt_dragon_adolescent = Creature:new {
 	lootGroups = {
 		{
 	        groups = {
-				{group = "krayt_tissue_rare", chance = 2000000},
-				{group = "krayt_dragon_common", chance = 2500000},
-				{group = "pearls_flawless", chance = 1500000},
-				{group = "armor_all", chance = 2000000},
-				{group = "weapons_all", chance = 2000000},
+				{group = "krayt_dragon_common", chance = 3300000},
+				{group = "krayt_tissue_uncommon", chance = 300000},
+				{group = "pearls_premium", chance = 3400000}
 			},
-			lootChance = 7720000
+			lootChance = 6000000
+		},
+		{
+	        groups = {
+				{group = "composite_armor", chance = 2000000},
+				{group = "ubese_armor", chance = 2000000},
+				{group = "melee_two_handed", chance = 2000000},
+				{group = "rifles", chance = 2000000},
+				{group = "pearls_select", chance = 2000000}				
+			},
+			lootChance = 10000000
 		}
 	},
 	weapons = {},

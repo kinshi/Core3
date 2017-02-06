@@ -42,8 +42,8 @@
 
 
 object_building_player_player_house_tatooine_medium_style_01 = object_building_player_shared_player_house_tatooine_medium_style_01:new {
-	lotSize = 2,
-	baseMaintenanceRate = 34,
+	lotSize = 3,
+	baseMaintenanceRate = 17,
 	allowedZones = {"dantooine", "lok", "tatooine"},
 	childObjects = {
 		{templateFile = "object/tangible/sign/player/house_address_tatooine.iff", x = -2, z = 2.25, y = 12.5, ox = 0, oy = -1, oz = 0, ow = 0, cellid = -1, containmentType = -1},
@@ -65,7 +65,7 @@ object_building_player_player_house_tatooine_medium_style_01 = object_building_p
 		{"private_med_battle_fatigue", 5},
 		{"private_safe_logout", 1}
 	},
-	width = 5
+	width = 1
 }
 
 ObjectTemplates:addTemplate(object_building_player_player_house_tatooine_medium_style_01, "object/building/player/player_house_tatooine_medium_style_01.iff")

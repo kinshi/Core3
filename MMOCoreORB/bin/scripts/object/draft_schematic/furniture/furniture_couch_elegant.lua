@@ -65,7 +65,7 @@ object_draft_schematic_furniture_furniture_couch_elegant = object_draft_schemati
    ingredientTemplateNames = {"craft_furniture_ingredients_n", "craft_furniture_ingredients_n", "craft_furniture_ingredients_n"},
    ingredientTitleNames = {"frame", "cushions", "upholstery"},
    ingredientSlotType = {0, 0, 1},
-   resourceTypes = {"metal", "hide_wooly_endor", "object/tangible/component/clothing/shared_synthetic_cloth.iff"},
+   resourceTypes = {"metal", "hide_wooly", "object/tangible/component/clothing/shared_synthetic_cloth.iff"},
    resourceQuantities = {310, 250, 8},
    contribution = {100, 100, 100},
 
