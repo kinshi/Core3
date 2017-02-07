@@ -47,10 +47,12 @@ public:
 
 		ManagedReference<CityRegion*> city = creature->getCityRegion();
 
-		if (city != NULL && city->isClientRegion()) {
-			creature->sendSystemMessage("@player_structure:not_permitted"); //Building is not permitted here.
-			return INVALIDPARAMETERS;
-		}
+//		Tarkin: Disable check for player structure placement in NPC cities - ignore client region		
+		
+//		if (city != NULL && city->isClientRegion()) {
+//			creature->sendSystemMessage("@player_structure:not_permitted"); //Building is not permitted here.
+//			return INVALIDPARAMETERS;
+//		}
 
 		ManagedReference<SceneObject*> obj = server->getZoneServer()->getObject(target);
 

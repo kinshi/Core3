@@ -837,8 +837,7 @@
 #include "InspacereloadCommand.h"
 #include "InspacerrCommand.h"
 #include "RequestSpaceTrainerCommand.h"
-
-
+#include "TarkinCommand.h"
 
 
 #endif /* COMMANDSNEW_H_ */
