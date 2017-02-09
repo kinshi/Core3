@@ -42,3 +42,6 @@ includeFile("lair/serverobjects.lua")
 
 -- Outfits
 includeFile("outfits/serverobjects.lua")
+
+-- Tarkin Custom
+includeFile("tarkin_custom/serverobjects.lua")
