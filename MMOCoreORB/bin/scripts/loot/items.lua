@@ -1150,7 +1150,7 @@ includeFile("items/wearables/wookiee/wke_skirt_s04.lua")
 
 --Loot
 
---includeFile("items/tarkin_custom/redeemable_voucher.lua")
+includeFile("items/tarkin_custom/redeemable_voucher.lua")
 --includeFile("items/tarkin_custom/av_21_schematic.lua")
 --includeFile("items/tarkin_custom/av_21_powerplant.lua")
 
@@ -1187,7 +1187,7 @@ includeFile("items/wearables/wookiee/wke_skirt_s04.lua")
 --includeFile("items/tarkin_custom/nge_housing/nge_hut_house_deed.lua")
 --includeFile("items/tarkin_custom/nge_housing/nge_jabba_house_scheme.lua")
 --includeFile("items/tarkin_custom/nge_housing/nge_mustafar_house_scheme.lua")
---includeFile("items/tarkin_custom/nge_housing/nge_sand_crawler_house_scheme.lua")
+includeFile("items/tarkin_custom/nge_housing/nge_sand_crawler_house_scheme.lua")
 --includeFile("items/tarkin_custom/nge_housing/nge_tree_house_scheme.lua")
 --includeFile("items/tarkin_custom/nge_housing/nge_vehicle_house_scheme.lua")
 --includeFile("items/tarkin_custom/nge_housing/nge_gen_lg_win_01_scheme.lua")
