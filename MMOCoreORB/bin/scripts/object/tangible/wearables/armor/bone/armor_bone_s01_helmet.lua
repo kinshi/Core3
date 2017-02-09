@@ -44,6 +44,8 @@
 object_tangible_wearables_armor_bone_armor_bone_s01_helmet = object_tangible_wearables_armor_bone_shared_armor_bone_s01_helmet:new {
 	templateType = ARMOROBJECT,
 
+	objectMenuComponent = "ArmorObjectMenuComponent",
+
 	playerRaces = { "object/creature/player/bothan_male.iff",
 				"object/creature/player/bothan_female.iff",
 				"object/creature/player/human_male.iff",
@@ -78,7 +80,7 @@ object_tangible_wearables_armor_bone_armor_bone_s01_helmet = object_tangible_wea
 				"object/mobile/vendor/zabrak_male.iff" },
 
 	-- kineticeffectiveness, energyeffectiveness, electricaleffectiveness, stuneffectiveness, blasteffectiveness, heateffectiveness, coldeffectiveness, acideffectiveness, restraineffectiveness
-	vulnerability = KINETIC + BLAST + STUN + HEAT + COLD + ACID + LIGHTSABER,
+	vulnerability = STUN + LIGHTSABER,
 
 	-- These are default Blue Frog stats
 	healthEncumbrance = 6,

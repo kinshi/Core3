@@ -349,7 +349,7 @@ includeFile("groups/wearables/wearables_uncommon.lua")
 
 -- Tarkin Custom
 
---includeFile("groups/tarkin_custom/deed_voucher.lua")
+includeFile("groups/tarkin_custom/deed_voucher.lua")
 --includeFile("groups/tarkin_custom/smc_armor.lua")
 --includeFile("groups/tarkin_custom/smc_clothing.lua")
 --includeFile("groups/tarkin_custom/ns_clothing.lua")
@@ -362,7 +362,7 @@ includeFile("groups/wearables/wearables_uncommon.lua")
 --includeFile("groups/tarkin_custom/nge_house_hut.lua")
 --includeFile("groups/tarkin_custom/nge_house_jabba.lua")
 --includeFile("groups/tarkin_custom/nge_house_mustafar.lua")
---includeFile("groups/tarkin_custom/nge_house_sand_crawler.lua")
+includeFile("groups/tarkin_custom/nge_house_sand_crawler.lua")
 --includeFile("groups/tarkin_custom/nge_house_tree.lua")
 --includeFile("groups/tarkin_custom/nge_house_vehicle.lua")
 --includeFile("groups/tarkin_custom/window_houses.lua")
