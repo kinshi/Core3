@@ -1833,7 +1833,7 @@ schematics = {
 --{path="object/draft_schematic/structure/hangar_house_schem.iff"},
 --{path="object/draft_schematic/structure/jabbas_house_schem.iff"},
 --{path="object/draft_schematic/structure/jedi_house_schem.iff"},
---{path="object/draft_schematic/structure/musty_house_schem.iff"},
+{path="object/draft_schematic/structure/musty_house_schem.iff"},
 --{path="object/draft_schematic/structure/rebel_house_schem.iff"},
 --{path="object/draft_schematic/structure/relaxation_house_schem.iff"},
 {path="object/draft_schematic/structure/sandcrawler_house_schem.iff"},
@@ -1841,7 +1841,7 @@ schematics = {
 --{path="object/draft_schematic/structure/tree_house_schem.iff"},
 --{path="object/draft_schematic/structure/vehicle_house_schem.iff"},
 --{path="object/draft_schematic/structure/yoda_house_schem.iff"},
---{path="object/draft_schematic/structure/yt1300_house_schem.iff"},
+{path="object/draft_schematic/structure/yt1300_house_schem.iff"},
 --{path="object/draft_schematic/structure/vipbunker_house_schem.iff"},
 
 --Furniture Draft Schematics 	
