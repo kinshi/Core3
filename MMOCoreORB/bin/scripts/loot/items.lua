@@ -1152,7 +1152,7 @@ includeFile("items/wearables/wookiee/wke_skirt_s04.lua")
 
 includeFile("items/tarkin_custom/redeemable_voucher.lua")
 includeFile("items/tarkin_custom/av_21_schematic.lua")
---includeFile("items/tarkin_custom/av_21_powerplant.lua")
+includeFile("items/tarkin_custom/av_21_powerplant.lua")
 
 
 --Clothing
