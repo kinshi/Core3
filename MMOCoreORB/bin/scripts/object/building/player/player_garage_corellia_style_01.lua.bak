@@ -53,8 +53,8 @@ object_building_player_player_garage_corellia_style_01 = object_building_player_
 	cityMaintenanceBase = 20000,
 	zoneComponent = "GarageZoneComponent",
 	dataObjectComponent = "GarageDataComponent",
-	length = 5,
-	width = 5,
+	length = 1,
+	width = 1,
 	childObjects = {
 		{templateFile = "object/tangible/terminal/terminal_player_structure_nosnap_mini.iff", x = 2.90, z = 1, y = 2, ox = 0, oy = 0, oz = 0, ow = 1, cellid = -1, containmentType = -1}
 	}

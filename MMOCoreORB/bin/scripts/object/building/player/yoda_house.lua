@@ -55,8 +55,8 @@ object_building_player_yoda_house = object_building_player_shared_yoda_house:new
 
 	},
 	constructionMarker = "object/building/player/construction/construction_player_house_corellia_large_style_01.iff",
-	length = 5,
-	width = 7
+	length = 1,
+	width = 1
 }
 
 ObjectTemplates:addTemplate(object_building_player_yoda_house, "object/building/player/yoda_house.iff")
