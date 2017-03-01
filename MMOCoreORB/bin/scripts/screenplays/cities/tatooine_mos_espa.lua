@@ -115,8 +115,8 @@ function TatooineMosEspaScreenPlay:spawnMobiles()
 	self:setMoodString(pNpc, "conversation")
 	pNpc = spawnMobile(self.planet, "farmer_rancher",60,-49.1,2.6,32.5,-36,1261663)
 	self:setMoodString(pNpc, "happy")
-	pNpc = spawnMobile(self.planet, "trainer_shipwright",60,-3.2,0.6,67.7,177,1261655)
-	self:setMoodString(pNpc, "neutral")
+	--pNpc = spawnMobile(self.planet, "trainer_shipwright",60,-3.2,0.6,67.7,177,1261655)
+	--self:setMoodString(pNpc, "neutral")
 
 	--Tavern -2888 2281
 	pNpc = spawnMobile(self.planet, "scientist",60,-2.1,1,9.1,-26,3065452)
@@ -181,7 +181,7 @@ function TatooineMosEspaScreenPlay:spawnMobiles()
 	--Guild Hall -2857 1987
 	spawnMobile(self.planet, "contractor",60,-3.69,1.13306,-6,11.0003,1256306)
 	spawnMobile(self.planet, "miner",60,3.29,1.13306,-9.58,249.007,1256011)
-	spawnMobile(self.planet, "trainer_artisan",0,-0.0885271,1.13306,-14.0283,2,1256011)
+	--spawnMobile(self.planet, "trainer_artisan",0,-0.0885271,1.13306,-14.0283,2,1256011)
 	spawnMobile(self.planet, "coa3_information_rebel",60,14.2091,1.13306,-10.1408,205.638,1256010)
 
 	--Cantina
@@ -204,11 +204,11 @@ function TatooineMosEspaScreenPlay:spawnMobiles()
 	self:setMoodString(pNpc, "conversation")
 
 	--Guild Hall -3063 2079
-	spawnMobile(self.planet, "trainer_architect",0,11,1.133,-14.5,0,1256021)
-	spawnMobile(self.planet, "trainer_armorsmith",0,-12.5142,1.13306,3.63893,165,1256020)
-	spawnMobile(self.planet, "trainer_droidengineer",0,-11.5362,1.13306,-12.6351,1,1256023)
-	spawnMobile(self.planet, "trainer_weaponsmith",0,-2.95975,1.13306,-8.77207,109,1256022)
-	spawnMobile(self.planet, "trainer_merchant",0,12,1.13306,6,180,1256019)
+	--spawnMobile(self.planet, "trainer_architect",0,11,1.133,-14.5,0,1256021)
+	--spawnMobile(self.planet, "trainer_armorsmith",0,-12.5142,1.13306,3.63893,165,1256020)
+	--spawnMobile(self.planet, "trainer_droidengineer",0,-11.5362,1.13306,-12.6351,1,1256023)
+	--spawnMobile(self.planet, "trainer_weaponsmith",0,-2.95975,1.13306,-8.77207,109,1256022)
+	--spawnMobile(self.planet, "trainer_merchant",0,12,1.13306,6,180,1256019)
 	--Med Center
 	spawnMobile(self.planet, "trainer_combatmedic",0,7.93319,0.184067,5.54261,86,4005424)
 	--Hotel
@@ -410,20 +410,20 @@ function TatooineMosEspaScreenPlay:spawnMobiles()
 	self:setMoodString(pNpc, "calm")
 	spawnMobile(self.planet, "trainer_1hsword",0,-2964,5,2021,33,0)
 	spawnMobile(self.planet, "trainer_2hsword",0,-2971,5,2032,174,0)
-	spawnMobile(self.planet, "trainer_architect",0,-2872,5,2159,180,0)
-	spawnMobile(self.planet, "trainer_artisan",0,-2890,5,2142,19,0)
+	--spawnMobile(self.planet, "trainer_architect",0,-2872,5,2159,180,0)
+	--spawnMobile(self.planet, "trainer_artisan",0,-2890,5,2142,19,0)
 	spawnMobile(self.planet, "trainer_brawler",0,-2933,5,2125,97,0)
 	spawnMobile(self.planet, "trainer_creaturehandler",0,-2994,5,2530,0,0)
 	spawnMobile(self.planet, "trainer_doctor",0,-3163.63,5,2122.39,18,0)
-	spawnMobile(self.planet, "trainer_entertainer",0,-2889,5,2178,161,0)
+	--spawnMobile(self.planet, "trainer_entertainer",0,-2889,5,2178,161,0)
 	spawnMobile(self.planet, "trainer_marksman",0,-2931,5,2121,91,0)
 	spawnMobile(self.planet, "trainer_medic",0,-3158,5,2122,5,0)
 	spawnMobile(self.planet, "trainer_medic",0,-2931,5,2116,65,0)
-	spawnMobile(self.planet, "trainer_musician",0,-2882,5,2171,180,0)
+	--spawnMobile(self.planet, "trainer_musician",0,-2882,5,2171,180,0)
 	spawnMobile(self.planet, "trainer_polearm",0,-2931,5,2386,0,0)
 	spawnMobile(self.planet, "trainer_scout",0,-2912.86,5,2106.67,174,0)
 	spawnMobile(self.planet, "trainer_unarmed",0,-2812,5,1973,180,0)
-	spawnMobile(self.planet, "trainer_weaponsmith",0,-2869,5,2146,8,0)
+	--spawnMobile(self.planet, "trainer_weaponsmith",0,-2869,5,2146,8,0)
 	--{"watto_leg_syndil",60,-2866.54,5,1856.86,242.669,0, "calm", "Syndil"},
 
 	--Creatures
