@@ -1142,11 +1142,11 @@ includeFile("items/wearables/wookiee/wke_skirt_s04.lua")
 
 --Tarkin Custom
 
---includeFile("items/tarkin_custom/goggles_s01.lua")
---includeFile("items/tarkin_custom/goggles_s02.lua")
---includeFile("items/tarkin_custom/goggles_s03.lua")
---includeFile("items/tarkin_custom/goggles_s04.lua")
---includeFile("items/tarkin_custom/goggles_s05.lua")
+includeFile("items/tarkin_custom/goggles_s01.lua")
+includeFile("items/tarkin_custom/goggles_s02.lua")
+includeFile("items/tarkin_custom/goggles_s03.lua")
+includeFile("items/tarkin_custom/goggles_s04.lua")
+includeFile("items/tarkin_custom/goggles_s05.lua")
 
 --Loot
 
