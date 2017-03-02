@@ -1233,4 +1233,18 @@ includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_leggings_sc
 --includeFile("items/tarkin_custom/nge_housing/rebel_spire_scheme.lua")
 --includeFile("items/tarkin_custom/nge_housing/imperial_spire_scheme.lua")
 
-
+--Craftables
+includeFile("items/loot_schematic/assorted_fruit_schematic.lua")
+includeFile("items/loot_schematic/campfire_schematic.lua")
+includeFile("items/loot_schematic/command_console_schematic.lua")
+includeFile("items/loot_schematic/corellian_flagpole_schematic.lua")
+includeFile("items/loot_schematic/diagnostic_screen_schematic.lua")
+includeFile("items/loot_schematic/droid_head_schematic.lua")
+includeFile("items/loot_schematic/foodcart_schematic.lua")
+includeFile("items/loot_schematic/hanging_planter_schematic.lua")
+includeFile("items/loot_schematic/microphone_s01_schematic.lua")
+includeFile("items/loot_schematic/microphone_s02_schematic.lua")
+includeFile("items/loot_schematic/park_bench_schematic.lua")
+includeFile("items/loot_schematic/pitcher_full_schematic.lua")
+includeFile("items/loot_schematic/professors_desk_schematic.lua")
+includeFile("items/loot_schematic/stuffed_fish_schematic.lua")
