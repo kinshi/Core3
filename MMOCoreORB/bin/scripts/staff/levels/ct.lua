@@ -1,7 +1,7 @@
 ct = {
 	level = 8,
 	name = "ct",
-	tag = "SWGEmu-CT",
+	tag = "Tarkin-CT",
 	skills = {
 		"admin_base",
 		"admin_debug_01",
