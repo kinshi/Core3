@@ -115,8 +115,8 @@ object_tangible_wearables_armor_tantel_armor_tantel_skreej_chest_plate = object_
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	experimentalGroupTitles = {"null", "null", "null", "exp_durability", "exp_quality", "exp_durability", "exp_durability", "exp_durability", "exp_durability", "null", "null", "exp_resistance", "null"},
 	experimentalSubGroupTitles = {"null", "null", "sockets", "hit_points", "armor_effectiveness", "armor_integrity", "armor_health_encumbrance", "armor_action_encumbrance", "armor_mind_encumbrance", "armor_rating", "armor_special_type", "armor_special_effectiveness", "armor_special_integrity"},
-	experimentalMin = {0, 0, 0, 1000, 1, 11250, 94, 33, 9, 1, 2, 5, 11250},
-	experimentalMax = {0, 0, 0, 1000, 20, 18750, 56, 20, 5, 1, 2, 30, 18750},
+	experimentalMin = {0, 0, 0, 1000, 1, 30000, 94, 33, 9, 1, 0, 5, 30000},
+	experimentalMax = {0, 0, 0, 5000, 40, 50000, 56, 20, 5, 1, 0, 55, 50000},
 	experimentalPrecision = {0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 4, 1, 1, 1, 1, 1, 1, 4, 4, 4, 1},
 }
