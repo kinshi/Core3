@@ -191,8 +191,8 @@ namespace server {
 		static int getMaxStorage(lua_State* L);
 		static int getMaintenanceRate(lua_State* L);
 		static int getPowerRate(lua_State* L);
+		static int adminPlaceStructure(lua_State* L);
 
-	private:
 		void setupLuaPackagePath(Lua* luaEngine);
 		void initializeLuaEngine(Lua* luaEngine);
 		int loadScreenPlays(Lua* luaEngine);

@@ -44,13 +44,15 @@
 object_tangible_wearables_armor_kashyyykian_ceremonial_armor_kashyyykian_ceremonial_chest_plate = object_tangible_wearables_armor_kashyyykian_ceremonial_shared_armor_kashyyykian_ceremonial_chest_plate:new {
 	templateType = ARMOROBJECT,
 
+	objectMenuComponent = "ArmorObjectMenuComponent",
+
 	playerRaces = { "object/creature/player/wookiee_male.iff",
 				"object/creature/player/wookiee_female.iff",
 				"object/mobile/vendor/wookiee_female.iff",
 				"object/mobile/vendor/wookiee_male.iff" },
 
 	-- Damage types in WeaponObject
-	vulnerability = ACID + STUN + LIGHTSABER,
+	vulnerability = LIGHTSABER,
 
 	-- These are default Blue Frog stats
 	healthEncumbrance = 1,
@@ -75,8 +77,8 @@ object_tangible_wearables_armor_kashyyykian_ceremonial_armor_kashyyykian_ceremon
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	experimentalGroupTitles = {"null", "null", "null", "null", "exp_quality", "exp_durability", "exp_durability", "exp_durability", "exp_durability", "null", "null", "exp_resistance", "null"},
 	experimentalSubGroupTitles = {"null", "null", "sockets", "hit_points", "armor_effectiveness", "armor_integrity", "armor_health_encumbrance", "armor_action_encumbrance", "armor_mind_encumbrance", "armor_rating", "armor_special_type", "armor_special_effectiveness", "armor_special_integrity"},
-	experimentalMin = {0, 0, 0, 1000, 5, 18750, 135, 48, 89, 1, 1, 5, 18750},
-	experimentalMax = {0, 0, 0, 1000, 25, 31250, 85, 33, 59, 1, 1, 40, 31250},
+	experimentalMin = {0, 0, 0, 1000, 1, 30000, 250, 66, 25, 1, 0, 5, 0},
+	experimentalMax = {0, 0, 0, 5000, 40, 50000, 150, 39, 15, 1, 0, 55, 0},
 	experimentalPrecision = {0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 4, 1, 1, 1, 1, 1, 1, 4, 4, 4, 1},
 }

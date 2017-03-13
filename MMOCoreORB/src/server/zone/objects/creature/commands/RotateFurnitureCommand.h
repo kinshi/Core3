@@ -30,29 +30,6 @@ public:
 		if (ghost == NULL)
 			return GENERALERROR;
 
-		String dir;
-		int degrees = 0;
-
-		try {
-			UnicodeTokenizer tokenizer(arguments.toString());
-			tokenizer.getStringToken(dir);
-			degrees = tokenizer.getIntToken();
-
-			dir = dir.toLowerCase();
-
-			if (dir != "left" && dir != "right")
-				throw Exception();
-
-		} catch (Exception& e) {
-			creature->sendSystemMessage("@player_structure:formet_rotratefurniture_degrees"); //Format: /rotateFurniture <LEFT/RIGHT> <degrees>
-			return INVALIDPARAMETERS;
-		}
-
-		if (degrees < 1 || degrees > 180) {
-			creature->sendSystemMessage("@player_structure:rotate_params"); //The amount to rotate must be between 1 and 180.
-			return INVALIDPARAMETERS;
-		}
-
 		ZoneServer* zoneServer = creature->getZoneServer();
 		ManagedReference<SceneObject*> obj = zoneServer->getObject(target);
 
@@ -66,52 +43,101 @@ public:
 		BuildingObject* buildingObject = rootParent != NULL ? (rootParent->isBuildingObject() ? cast<BuildingObject*>( rootParent.get()) : NULL) : NULL;
 		EventPerkDataComponent* data = cast<EventPerkDataComponent*>(obj->getDataObjectComponent()->get());
 
-		if (data != NULL) {
-			EventPerkDeed* deed = data->getDeed();
+		// Allow admin to skip misc rules
+		if (!ghost->isAdmin()){
+			if (data != NULL) {
+				EventPerkDeed* deed = data->getDeed();
 
-			if (deed == NULL) {
+				if (deed == NULL) {
+					return GENERALERROR;
+				}
+
+				ManagedReference<CreatureObject*> owner = deed->getOwner().get();
+
+				if (owner != creature) {
+					return GENERALERROR;
+				}
+
+			} else if (buildingObject == NULL) {
+				creature->sendSystemMessage("@player_structure:must_be_in_building"); //You must be in a building to do that.
 				return GENERALERROR;
-			}
 
-			ManagedReference<CreatureObject*> owner = deed->getOwner().get();
+			} else {
+				if (obj->isVendor() && !obj->checkContainerPermission(creature, ContainerPermissions::MOVEVENDOR)) {
+					return GENERALERROR;
+				}
 
-			if (owner != creature) {
-				return GENERALERROR;
-			}
+				if (!obj->isVendor() && !buildingObject->isOnAdminList(creature)) {
+					creature->sendSystemMessage("@player_structure:must_be_admin"); //You must be a building admin to do that.
+					return GENERALERROR;
+				}
 
-		} else if (buildingObject == NULL) {
-			creature->sendSystemMessage("@player_structure:must_be_in_building"); //You must be in a building to do that.
-			return GENERALERROR;
+				if (obj->getRootParent() != buildingObject || buildingObject->containsChildObject(obj)) {
+					creature->sendSystemMessage("@player_structure:rotate_what"); //What do you want to rotate?
+					return GENERALERROR;
+				}
 
-		} else {
-			if (obj->isVendor() && !obj->checkContainerPermission(creature, ContainerPermissions::MOVEVENDOR)) {
-				return GENERALERROR;
-			}
-
-			if (!obj->isVendor() && !buildingObject->isOnAdminList(creature)) {
-				creature->sendSystemMessage("@player_structure:must_be_admin"); //You must be a building admin to do that.
-				return GENERALERROR;
-			}
-
-			if (obj->getRootParent() != buildingObject || buildingObject->containsChildObject(obj)) {
-				creature->sendSystemMessage("@player_structure:rotate_what"); //What do you want to rotate?
-				return GENERALERROR;
-			}
-
-			if (buildingObject->isGCWBase()) {
-				creature->sendSystemMessage("@player_structure:no_move_hq"); // You may not move or rotate objects inside a factional headquarters.
-				return GENERALERROR;
+				if (buildingObject->isGCWBase()) {
+					creature->sendSystemMessage("@player_structure:no_move_hq"); // You may not move or rotate objects inside a factional headquarters.
+					return GENERALERROR;
+				}
 			}
 		}
-
-		if (dir == "right")
-			obj->rotate(-degrees);
-		else
-			obj->rotate(degrees);
-
-		obj->incrementMovementCounter();
-
-		if (obj->getParent() != NULL)
+		
+		// End general rules, handle input and rotation
+		
+		String dir = "";
+		String deg = "";
+		int degrees = 0;
+		
+		try {
+			UnicodeTokenizer tokenizer(arguments.toString());
+			tokenizer.getStringToken(dir);
+			tokenizer.getStringToken(deg);
+			
+			// Prevent overlflow input values
+			if (deg.length() > 4)
+				throw Exception();
+				
+			degrees = Integer::valueOf(deg);
+			
+			if (abs(degrees) > 360)
+				throw Exception();
+			
+			dir = dir.toLowerCase();
+			
+			// Setup rotation
+			if (dir == "right"){
+				obj->rotate(-degrees);
+			}
+			else if (dir == "left"){
+				obj->rotate(degrees);
+			}
+			else if (dir == "yaw" || dir == "yxx"){
+				obj->rotate(degrees);
+			}
+			else if (dir == "pitch" || dir == "pxx"){
+				obj->rotateYaxis(degrees);
+			}
+			else if (dir == "roll" || dir == "rxx"){
+				obj->rotateXaxis(degrees);
+			}
+			else if (dir == "reset" || dir == "xresetx"){
+				obj->setDirection(1, 0, 0, 0);
+			} else {
+				throw Exception();
+			}
+			
+		} catch (const Exception& e) {
+			creature->sendSystemMessage("Error: /rotateFurniture command requires using the whole direction word and a number between -360 to 360.");
+			creature->sendSystemMessage("Options: left right yaw pitch roll reset yxx pxx rxx xresetx");
+			creature->sendSystemMessage("Examples: /rotate reset 1  ... /rotate left 45 ... /rotate pitch -270");
+			return GENERALERROR;
+		}
+		
+        // Apply rotation
+        obj->incrementMovementCounter();
+        if (obj->getParent() != NULL)
 			obj->teleport(obj->getPositionX(), obj->getPositionZ(), obj->getPositionY(), obj->getParent().get()->getObjectID());
 		else
 			obj->teleport(obj->getPositionX(), obj->getPositionZ(), obj->getPositionY());

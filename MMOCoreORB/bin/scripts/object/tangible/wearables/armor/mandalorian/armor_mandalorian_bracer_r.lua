@@ -44,11 +44,6 @@
 object_tangible_wearables_armor_mandalorian_armor_mandalorian_bracer_r = object_tangible_wearables_armor_mandalorian_shared_armor_mandalorian_bracer_r:new {
 	templateType = ARMOROBJECT,
 
-	certificationsRequired = { "combat_bountyhunter_master",
-					"combat_commando_master",
-					"outdoors_squadleader_master",
-					"outdoors_ranger_master" },
-
 	playerRaces = { "object/creature/player/bothan_male.iff",
 				"object/creature/player/bothan_female.iff",
 				"object/creature/player/human_male.iff",
@@ -93,26 +88,36 @@ object_tangible_wearables_armor_mandalorian_armor_mandalorian_bracer_r = object_
 				"object/mobile/vendor/zabrak_male.iff" },
 	
 	-- Damage types in WeaponObject
-	vulnerability = COLD + ELECTRICITY + STUN + LIGHTSABER,
+--	vulnerability = COLD + ELECTRICITY + STUN + LIGHTSABER,
 
 	-- These are default Blue Frog stats, These are also used as temporary DWB crafting stats. Needs to be adjusted to random color, and Blast should be a Special Resist. Encumberance on boots and all arm/hand armor are estimated. Helm/Chest/Leggings are correct. 
-	healthEncumbrance = 50,
-	actionEncumbrance = 48,
-	mindEncumbrance = 53,
+	healthEncumbrance = 10,
+	actionEncumbrance = 10,
+	mindEncumbrance = 10,
 
 	-- LIGHT, MEDIUM, HEAVY
 	rating = LIGHT,
 	maxCondition = 40000,
 
-	kinetic = 58,
-	energy = 58,
-	electricity = 0,
-	stun = 0,
-	blast = 65,
-	heat = 58,
-	cold = 0,
-	acid = 58,
-	lightSaber = 0
+	kinetic = 70,
+	energy = 70,
+	electricity = 70,
+	stun = 70,
+	blast = 70,
+	heat = 70,
+	cold = 70,
+	acid = 70,
+	lightSaber = 70,
+
+	numberExperimentalProperties = {1, 1, 1, 1, 2, 2, 2, 2, 2, 1, 1, 2, 1},
+	experimentalProperties = {"XX", "XX", "XX", "XX", "OQ", "SR", "OQ", "UT", "MA", "OQ", "MA", "OQ", "MA", "OQ", "XX", "XX", "OQ", "SR", "XX"},
+	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
+	experimentalGroupTitles = {"null", "null", "null", "exp_durability", "exp_quality", "exp_resistance", "exp_durability", "exp_durability", "exp_durability", "null", "null", "exp_resistance", "null"},
+	experimentalSubGroupTitles = {"null", "null", "sockets", "hit_points", "armor_effectiveness", "armor_integrity", "armor_health_encumbrance", "armor_action_encumbrance", "armor_mind_encumbrance", "armor_rating", "armor_special_type", "armor_special_effectiveness", "armor_special_integrity"},
+	experimentalMin = {0, 0, 0, 4000, 5, 50000, 22, 22, 13, 1, 1, 5, 0},
+	experimentalMax = {0, 0, 0, 6000, 50, 70000, 13, 13, 9, 1, 1, 70, 0},
+	experimentalPrecision = {0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 10, 0},
+	experimentalCombineType = {0, 0, 4, 1, 1, 1, 1, 1, 1, 4, 4, 4, 1},
 }
 
 ObjectTemplates:addTemplate(object_tangible_wearables_armor_mandalorian_armor_mandalorian_bracer_r, "object/tangible/wearables/armor/mandalorian/armor_mandalorian_bracer_r.iff")

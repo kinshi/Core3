@@ -45,7 +45,7 @@ FireLightningSingle1Command = {
         name = "firelightningsingle1",
 
 	damageMultiplier = 3.0,
-	speedMultiplier = 2.0,
+	speedMultiplier = 1.0,
 	healthCostMultiplier = 1,
 	actionCostMultiplier = 1,
 	mindCostMultiplier = 1,
@@ -57,7 +57,7 @@ FireLightningSingle1Command = {
 	
 	weaponType = SPECIALHEAVYWEAPON,
 
-	range = 16
+	range = 32
 }
 
 AddCommand(FireLightningSingle1Command)

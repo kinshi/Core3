@@ -212,10 +212,12 @@ int StructureManager::placeStructureFromDeed(CreatureObject* creature, Structure
 		return 1;
 	}
 
-	if (!planetManager->isBuildingPermittedAt(x, y, creature)) {
-		creature->sendSystemMessage("@player_structure:not_permitted"); //Building is not permitted here.
-		return 1;
-	}
+// 	Tarkin: Disable another check that prevents player structures inside NPC cities	
+	
+//	if (!planetManager->isBuildingPermittedAt(x, y, creature)) {
+//		creature->sendSystemMessage("@player_structure:not_permitted"); //Building is not permitted here.
+//		return 1;
+//	}
 
 	SortedVector<ManagedReference<ActiveArea*> > objects;
 	zone->getInRangeActiveAreas(x, y, &objects, true);
@@ -981,11 +983,14 @@ void StructureManager::reportStructureStatus(CreatureObject* creature,
 					status->addMenuItem(gcwMan->getVulnerableStatus(building, creature));
 			}
 		}
-
+		
+		//Number of Items in Building: 10/500
 		status->addMenuItem(
 				"@player_structure:items_in_building_prompt "
-						+ String::valueOf(
-								building->getCurrentNumberOfPlayerItems())); //Number of Items in Building:
+				+ String::valueOf(building->getCurrentNumberOfPlayerItems())
+				+ "/"
+				+ String::valueOf(building->getMaximumNumberOfPlayerItems())
+		); 
 	}
 
 	ghost->addSuiBox(status);

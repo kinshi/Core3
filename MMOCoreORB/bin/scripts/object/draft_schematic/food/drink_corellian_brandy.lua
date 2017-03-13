@@ -65,7 +65,7 @@ object_draft_schematic_food_drink_corellian_brandy = object_draft_schematic_food
    ingredientTemplateNames = {"craft_food_ingredients_n", "craft_food_ingredients_n", "craft_food_ingredients_n", "craft_food_ingredients_n", "craft_food_ingredients_n"},
    ingredientTitleNames = {"double_aged_berries", "fermented_fruit", "alcohol", "glass", "additive"},
    ingredientSlotType = {0, 0, 1, 2, 3},
-   resourceTypes = {"fruit_berries_corellia", "fruit_fruits_corellia", "object/tangible/food/crafted/shared_drink_alcohol.iff", "object/tangible/component/food/base/shared_drink_container_base.iff", "object/tangible/food/crafted/additive/shared_additive_medium.iff"},
+   resourceTypes = {"fruit_berries", "fruit_fruits", "object/tangible/food/crafted/shared_drink_alcohol.iff", "object/tangible/component/food/base/shared_drink_container_base.iff", "object/tangible/food/crafted/additive/shared_additive_medium.iff"},
    resourceQuantities = {20, 20, 1, 1, 1},
    contribution = {100, 100, 100, 100, 100},
 

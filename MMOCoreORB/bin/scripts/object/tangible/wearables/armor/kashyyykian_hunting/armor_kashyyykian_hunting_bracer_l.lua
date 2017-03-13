@@ -44,34 +44,34 @@
 object_tangible_wearables_armor_kashyyykian_hunting_armor_kashyyykian_hunting_bracer_l = object_tangible_wearables_armor_kashyyykian_hunting_shared_armor_kashyyykian_hunting_bracer_l:new {
 	templateType = ARMOROBJECT,
 
+	faction = "Rebel",
+
 	playerRaces = { "object/creature/player/wookiee_male.iff",
 				"object/creature/player/wookiee_female.iff",
 				"object/mobile/vendor/wookiee_female.iff",
 				"object/mobile/vendor/wookiee_male.iff" },
 
 	-- Damage types in WeaponObject
-	vulnerability = STUN + LIGHTSABER,
-
-	specialResists = KINETIC,
+	vulnerability = LIGHTSABER,
 
 	-- These are default Blue Frog stats
-	healthEncumbrance = 80,
-	actionEncumbrance = 80,
-	mindEncumbrance = 80,
+	healthEncumbrance = 1,
+	actionEncumbrance = 1,
+	mindEncumbrance = 1,
 
-	maxCondition = 30000,
+	maxCondition = 45000,
 
 	-- LIGHT, MEDIUM, HEAVY
 	rating = LIGHT,
 
-	kinetic = 80,
-	energy = 65,
-	electricity = 65,
-	stun = 25,
-	blast = 65,
-	heat = 65,
-	cold = 65,
-	acid = 65,
+	kinetic = 55,
+	energy = 55,
+	electricity = 55,
+	stun = 55,
+	blast = 55,
+	heat = 55,
+	cold = 55,
+	acid = 55,
 	lightSaber = 0,
 
 	numberExperimentalProperties = {1, 1, 1, 2, 2, 2, 2, 2, 2, 1, 1, 2, 1},

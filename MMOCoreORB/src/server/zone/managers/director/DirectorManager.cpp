@@ -348,6 +348,7 @@ void DirectorManager::initializeLuaEngine(Lua* luaEngine) {
 	lua_register(luaEngine->getLuaState(), "getMaxStorage", getMaxStorage);
 	lua_register(luaEngine->getLuaState(), "getMaintenanceRate", getMaintenanceRate);
 	lua_register(luaEngine->getLuaState(), "getPowerRate", getPowerRate);
+	lua_register(luaEngine->getLuaState(), "adminPlaceStructure", adminPlaceStructure);
 
 	luaEngine->setGlobalInt("POSITIONCHANGED", ObserverEventType::POSITIONCHANGED);
 	luaEngine->setGlobalInt("CLOSECONTAINER", ObserverEventType::CLOSECONTAINER);
@@ -3195,6 +3196,13 @@ int DirectorManager::objectPlaceStructure(lua_State* L) {
 	float x = lua_tonumber(L, -3);
 	float y = lua_tonumber(L, -2);
 	int angle = lua_tonumber(L, -1);
+=======
+* Place a structure as a "player structure" based where the character is standing.
+* lua: adminPlaceStructure(pPlayer, templateString)
+*/
+int DirectorManager::adminPlaceStructure(lua_State* L) {
+	Reference<CreatureObject*> creature = (CreatureObject*)lua_touserdata(L, -2);
+	String templateString = lua_tostring(L, -1);
 
 	ManagedReference<Zone*> zone = creature->getZone();
 
@@ -3269,4 +3277,27 @@ int DirectorManager::getPowerRate(lua_State* L) {
 	lua_pushinteger(L, rate);
 
 	return 1;
+
+	if (creature->getParent() != NULL) {
+			DirectorManager::instance()->error("adminPlaceStructure - You were not outside.");
+			return 0;
+	}
+
+	int angle = creature->getDirectionAngle();
+
+	if (templateString.contains("housing_tatt_style02_med") || templateString.contains("player/city/cloning") || templateString.contains("player/city/hospital"))
+		angle -= 90; // Correct unusual default POB rotation
+
+	if (templateString.contains("guild_theater"))
+		angle -= 180; // Correct unusual default POB rotation
+
+	float x = creature->getPositionX();
+	float y = creature->getPositionY();
+	int persistenceLevel = 1;
+
+	// Create Structure
+	StructureObject* structureObject = StructureManager::instance()->placeStructure(creature, templateString, x, y, angle, persistenceLevel);
+
+	return 0;
+
 }

@@ -54,7 +54,7 @@ Melee1hScatterHit2Command = {
 	animation = "combo_5b", 
 	animType = GENERATE_INTENSITY,
 
-	poolsToDamage = HEALTH_ATTRIBUTE + ACTION_ATTRIBUTE + MIND_ATTRIBUTE,
+	poolsToDamage = HEALTH_ATTRIBUTE + ACTION_ATTRIBUTE,
 	
 	weaponType = ONEHANDMELEEWEAPON,
 
