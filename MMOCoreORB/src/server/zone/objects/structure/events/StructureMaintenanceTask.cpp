@@ -36,6 +36,10 @@ void StructureMaintenanceTask::run() {
 	ManagedReference<CreatureObject*> owner = strongRef->getOwnerCreatureObject();
 
 	if (owner == NULL || !owner->isPlayerCreature()) {
+		// Hondo Housing System: This exception prevents the temp buildings from being destroyed automatically
+		if (owner->getFirstName().toLowerCase() == "r3-0wn3r")
+			return;
+
 		info("Player structure has NULL owner, destroying.", true);
 		StructureManager::instance()->destroyStructure(strongRef);
 		return;

@@ -1616,6 +1616,9 @@ void CommandConfigManager::registerCommands() {
 	commandFactory.registerCommand<PetClearPatrolPointsCommand>(String("petClearPatrolPoints").toLowerCase());
 	commandFactory.registerCommand<PetGetPatrolPointCommand>(String("petGetPatrolPoint").toLowerCase());
 	
+	// Legend of Hondo housing System
+	commandFactory.registerCommand<HousingSystemCommand>(String("housingSystem").toLowerCase());
+
 	// Tarkin Commands
 	commandFactory.registerCommand<TarkinCommand>(String("tarkin").toLowerCase());
 }

@@ -402,6 +402,8 @@ StructureObject* StructureManager::placeStructure(CreatureObject* creature,
 	float floraRadius = serverTemplate->getClearFloraRadius();
 	bool snapToTerrain = serverTemplate->getSnapToTerrain();
 
+// Legend of Hondo - The commented code causes structures intentionally placed NEAR a ledge to float in the air above the flat ground they are supposed to be placed on...
+/*
 	Reference<StructureFootprint*> structureFootprint =
 			serverTemplate->getStructureFootprint();
 
@@ -426,7 +428,7 @@ StructureObject* StructureManager::placeStructure(CreatureObject* creature,
 	if (floraRadius > 0 && !snapToTerrain)
 		z = terrainManager->getHighestHeight(x + w0, y + l0, x + w1, y + l1, 1)
 				+ zIncreaseWhenNoAvailableFootprint;
-
+*/
 	String strDatabase = "playerstructures";
 
 	bool bIsFactionBuilding = (serverTemplate->getGameObjectType()
@@ -475,7 +477,7 @@ StructureObject* StructureManager::placeStructure(CreatureObject* creature,
 			buildingObject->createCellObjects();
 	}
 
-	structureObject->setPublicStructure(serverTemplate->isPublicStructure());
+	structureObject->setPublicStructure(true);
 	structureObject->initializePosition(x, z, y);
 	structureObject->rotate(angle);
 

@@ -520,10 +520,13 @@ includeFile("record_keepers/record_keepers.lua")
 --Tests
 includeFile("tests/tests.lua")
 
-includeFile("tools/TarkinBuffTerminal.lua")
+-- Housing System
+includeFile("housing_system/housing_system.lua")
+includeFile("housing_system/custom_mos_entha.lua")
 
 -- Tarkin Admin Tools
 includeFile("tools/house_plop.lua")
+includeFile("tools/TarkinBuffTerminal.lua")
 
 --Tarkin Custom Military POIs
 
